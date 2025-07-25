@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import path from 'node:path'
 import { crx } from '@crxjs/vite-plugin'
 import { defineConfig } from 'vite'
@@ -22,4 +23,7 @@ export default defineConfig({
       ],
     },
   },
+  test: {
+    include: ["test/**/*.test.ts"]
+  }
 })
