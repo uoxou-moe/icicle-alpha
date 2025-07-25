@@ -13,6 +13,8 @@ release
 dist-ssr
 *.local
 
+dummy-non-existing-folder
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
