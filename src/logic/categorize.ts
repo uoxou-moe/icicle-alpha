@@ -8,7 +8,7 @@ export function categorize(input: CSSStyleDeclaration): string {
 	const transDurationSec = parseTransitionDuration(transDur);
 	const hasShadow = input.boxShadow && input.boxShadow !== "none";
 
-	if (!transProps || transDurationSec < 0.2) {
+	if (transProps === 'none' || transDurationSec < 0.2) {
 		if (hasShadow) {
 			return "Snappy";
 		} else {
