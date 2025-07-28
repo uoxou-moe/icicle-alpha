@@ -10,7 +10,8 @@
 				"--user-data-dir=${workspaceFolder}/.vscode-chrome-debug"
 			],
 			"runtimeExecutable": "stable",
-			"webRoot": "${workspaceFolder}"
+			"webRoot": "${workspaceFolder}",
+			"file": "${workspaceFolder}/test/index.html"
 		}
 	]
 }
